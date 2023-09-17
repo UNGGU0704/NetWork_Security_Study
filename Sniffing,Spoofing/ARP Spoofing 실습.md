@@ -31,7 +31,57 @@
 - **환경** : *VMWare*을 활용한 가상 네트워크 환경
 - **도구** : *Wireshark*
 - **Attacker** : *Kali Linux*
-- **Victim :** *Window 11* `[IP: 192.168.203.129 , MAC: 00:50:56:fb:1b:36]`
+- **Victim** : *Window 11* `[IP: 192.168.203.129 , MAC: 00:50:56:fb:1b:36]`
+
+<br> 
+
+<img src = "img/sniffing1.png">
+
+> 와이어 샤크를 활용해 자신의 패킷을 스니핑 해보았다.
+<br>
+
+<img src = "img/sniffing2.png">
+
+> Window 11에서 arp -a 명령어 실행		<br>	
+> IP: `192.168.203.129` 				
+> mac : `00:50:56:fb:1b:36`
+
+<br>
+
+<img src = "img/sniffing3.png">
+
+> 공격자(칼리리눅스)에서 희생자(윈도우)에게 ARP Spoofing함
+<br>
+
+<img src = "img/sni4.png">
+
+> 기존  MAC 주소 : `00:50:56:fb:1b:36`     
+
+> 변경된  MAC 주소 : `00:0c:29:2a:90:6f`
+
+<br>
+<img src = "img/sni5.png">
+
+> 희생자의 패킷을 정상적으로 보내주는 패킷 포워딩 실시 정상적으로 yes24 사이트에 접근할 수 있게 되었다.
+<br>
+<img src = "img/sni6.png">
+
+> 희생자가 검색엔진을 통해 network security를 검색 한 것을 공격자의 Wireshark로 패킷 분석한 결과 “network security”의 검색을 위한 쿼리문이 담긴 패킷을 전송한 것을 확인 할  수 있었다.
+
+<br>
+
+<img src = "img/sni7.png">
+
+> ARP Spoofing 실습 과정을 그림으로 정리
+
+----
+
+## 결론
+- 칼리 리눅스에 기능들이 내장되어 있어서 훨씬 수월하게 진행 한거 같다.
+- Victim 입장에선 이러한 Spoofing을 당하고 있다면 자신이 당하는지도 모를 것이라는걸 느꼈다
+- 또한 단순히 패킷 분석 도구인줄 알았던 WireShark가 Attacker의 입장에서는 생각보다 강력한 도구라는걸 느꼈다.
+- 추후 웹 서비스를 제공하는 프로젝트를 할때 이러한 공격 방식을 되새기며 클라이언트를 식별할 무언가가 필요하다는걸 느꼈다.
+
 
 
 
