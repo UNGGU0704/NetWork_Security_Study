@@ -507,11 +507,11 @@ SQL Injection 같은 웹 사이트 공격과 같은 경우 일반적인 가상 �
 
 ## 참고 자료
 
-[*https://www.smtechub.com/latest-google-sql-dorks/](https://www.smtechub.com/latest-google-sql-dorks/) , 구글 Dorks 명령어 모음*
+*[https://www.smtechub.com/latest-google-sql-dorks/](https://www.smtechub.com/latest-google-sql-dorks/) , 구글 Dorks 명령어 모음*
 
-[*https://ko.wikipedia.org/wiki/SQL_삽입](https://ko.wikipedia.org/wiki/SQL_%EC%82%BD%EC%9E%85) , 위키피디아*
+*[https://ko.wikipedia.org/wiki/SQL_삽입](https://ko.wikipedia.org/wiki/SQL_%EC%82%BD%EC%9E%85) , 위키피디아*
 
-[*https://www.bugbountyclub.com/pentestgym/view/52](https://www.bugbountyclub.com/pentestgym/view/52) ,버그바운티 클럽*
+*[https://www.bugbountyclub.com/pentestgym/view/52](https://www.bugbountyclub.com/pentestgym/view/52) ,버그바운티 클럽*
 
 *네트워크 해킹과 보안 개정3판, 양대일, 한빛미디어*
 
