@@ -325,7 +325,7 @@ High Level에서 사용했던 우회방법을 사용해 보았다.
 
 ![Untitled](XSS%20(Cross-site%20Scripting)%20bfb6c6c6ce0a45b6957a8a1961ada7ce/Untitled%2040.png)
 
-그러나 이번에는 <img src=x onerror=alert(1)>이 입력한 그대로 출력되는 모습을 확인할 수 있다.
+그러나 이번에는 `<img src=x onerror=alert(1)>` 이 입력한 그대로 출력되는 모습을 확인할 수 있다.
 
 **원리**
 
